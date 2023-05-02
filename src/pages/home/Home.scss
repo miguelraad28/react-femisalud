@@ -1,0 +1,12 @@
+.specialtiesContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    h2{
+        text-align: center;
+        padding: 22px;
+        font-size: calc(0.8em + 0.9vw);
+    }
+}

@@ -1,0 +1,104 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    @media screen and (min-width: 530px) {
+
+        .gridFooter {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            width: 100vw;
+            padding: 15px 25px 15px 0;
+            translate: -25px 0;
+            gap: 15px;
+            background-color: #ffd6ef;
+            //background: linear-gradient(#ffd2eeeb, #ffd2ee35);
+
+            .footerLogoContainer {
+                height: 80px;
+            }
+
+            &>div {
+                transform: translate(-60px, 0);
+            }
+
+            div:first-child {
+                display: flex;
+                justify-content: end;
+                margin-bottom: -8px;
+            }
+
+            div:last-child {
+                width: max-content;
+                display: flex;
+                justify-content: center;
+                margin-top: -10px;
+                flex-direction: column;
+                text-align: center;
+
+                .drName {
+                    font-size: 1.6em;
+                }
+
+                .specialtiesNames {
+                    font-size: 1em;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body{
+        padding-bottom: calc(272px + 2em);
+    }
+    .gridFooter {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        width: 100vw;
+            padding: 15px 0;
+            gap: 15px;
+        background-color: #ffd6ef;
+        .footerLogoContainer {
+            height: 100px;
+        }
+
+        // &>div {
+        //     transform: translate(-60px, 0);
+        // }
+
+        div:first-child {
+            display: flex;
+            justify-content: center;
+            //justify-content: end;
+            //margin-bottom: -8px;
+        }
+
+        div:last-child {
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            margin-top: -10px;
+            flex-direction: column;
+            text-align: center;
+
+            .drName {
+                font-size: 1.6em;
+            }
+
+            .specialtiesNames {
+                font-size: 1em;
+                font-weight: 700;
+            }
+        }
+
+
+    }
+}

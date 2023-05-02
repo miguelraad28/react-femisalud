@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: Bradley;
+    src: url("/Bradley.ttf") format("opentype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bradley {
+    font-family: Bradley;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    background-color: rgb(246, 246, 246);
+}
+
+@media screen and (min-width: 530px) {
+    body{
+        padding-bottom: calc(200px + 2em);
+    }
+}
