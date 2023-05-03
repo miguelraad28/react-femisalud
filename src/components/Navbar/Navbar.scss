@@ -24,7 +24,10 @@ nav {
         position: relative;
         display: flex;
         overflow: visible;
-
+        a{
+            color: black;
+            text-decoration: none;
+        }
         li {
             z-index: 2;
             display: flex;
