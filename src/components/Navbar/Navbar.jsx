@@ -22,10 +22,10 @@ const Navbar = () => {
           </li></Link>
           <Link to="/servicios" style={{overflow: 'visible'}}><li className='mainLi' >SERVICIOS<div className='background'></div>
             <ul className='dropdownContainer'>
-              <li>CONSULTAS MÉDICAS</li>
-              <li>ECOGRAFÍAS</li>
-              <li>PROCEDIMIENTOS</li>
-              <li>CIRUGÍAS</li>
+              <Link to="/servicios#consultasMedicas"><li>CONSULTAS MÉDICAS</li></Link>
+              <Link to="/servicios#ecografias"><li>ECOGRAFÍAS</li></Link>
+              <Link to="/servicios#procedimientos"><li>PROCEDIMIENTOS</li></Link>
+              <Link to="/servicios#cirugias"><li>CIRUGÍAS</li></Link>
             </ul>
           </li></Link>
           {/* <Link to="/#sobreNosotros"><li className='mainLi'>SOBRE NOSOTROS<div className='background'></div></li></Link> */}
