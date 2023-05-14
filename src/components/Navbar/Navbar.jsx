@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.scss';
 import TopDataSection from '../Top&BottomDataSection/TopDataSection';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
@@ -11,23 +11,23 @@ const Navbar = () => {
           <img src="./images/logohd.png" />
         </div>
         <ul className='navigationContainer'>
-          <Link to="/"><li className='mainLi'>INICIO<div className='background'></div></li></Link>
-          <Link to="/especialidades" style={{overflow: 'visible'}}><li className='mainLi' >ESPECIALIDADES<div className='background'></div>
+          <NavLink to="/" className={({isActive})=> isActive ? "activeNavLink" : ""}><li className='mainLi'>INICIO<div className='background'></div></li></NavLink>
+          <NavLink to="/especialidades" style={{overflow: 'visible'}} className={({isActive})=> isActive ? "activeNavLink" : ""}><li className='mainLi' >ESPECIALIDADES<div className='background'></div>
             <ul className='dropdownContainer'>
               <Link to="/especialidades#ginecologia"><li>GINECOLOGÍA</li></Link>
               <Link to="/especialidades#obstetricia"><li>OBSTETRICIA</li></Link>
               <Link to="/especialidades#endocrinologiaGinecologica"><li>ENDOCRINOLOGÍA GINECOLÓGICA</li></Link>
             </ul>
 
-          </li></Link>
-          <Link to="/servicios" style={{overflow: 'visible'}}><li className='mainLi' >SERVICIOS<div className='background'></div>
+          </li></NavLink>
+          <NavLink to="/servicios" style={{overflow: 'visible'}} className={({isActive})=> isActive ? "activeNavLink" : ""}><li className='mainLi' >SERVICIOS<div className='background'></div>
             <ul className='dropdownContainer'>
               <Link to="/servicios#consultasMedicas"><li>CONSULTAS MÉDICAS</li></Link>
               <Link to="/servicios#ecografias"><li>ECOGRAFÍAS</li></Link>
               <Link to="/servicios#procedimientos"><li>PROCEDIMIENTOS</li></Link>
               <Link to="/servicios#cirugias"><li>CIRUGÍAS</li></Link>
             </ul>
-          </li></Link>
+          </li></NavLink>
           {/* <Link to="/#sobreNosotros"><li className='mainLi'>SOBRE NOSOTROS<div className='background'></div></li></Link> */}
         </ul>
       </nav>

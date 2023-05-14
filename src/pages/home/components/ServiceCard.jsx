@@ -11,12 +11,12 @@ const ServiceCard = (props) => {
             <div className='serviceData'>
                 <ul>
                     {props.items.map(item =>
-                        <li>{item}</li>
+                        <li key={item}>{item}</li>
                     )}
                 </ul>
             </div>
             <div className='seeMoreLinkContainer'>
-            <Link className='montserrat' to={`/servicios${props.link}`}><p>VER MÁS</p></Link>
+            <Link className='montserrat' to={`/servicios${props.link}`}><p>VER MÁS<i className="bi bi-box-arrow-up-right"></i></p></Link>
             </div>
         </div>
     );
