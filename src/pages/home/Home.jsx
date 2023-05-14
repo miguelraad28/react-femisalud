@@ -22,6 +22,12 @@ const Home = () => {
                     <ServiceCard img="./images/cirugias.jpg" title="CIRUGÍAS" link="#cirugias" items={["PARTOS", "CESÁREAS", "GINECOLÓGICAS"]} />
                 </div>
             </div>
+            <div className='locationContainer'>
+                <h2 className='montserrat'>UBICACIÓN</h2>
+                <div className='location'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.3662961595655!2d-72.61971382377133!3d-38.73235587175981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d584bf1efd4d%3A0xba89962716b311e3!2sFemisalud!5e0!3m2!1ses!2sar!4v1684105689558!5m2!1ses!2sar"  height={450} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                </div>
+            </div>
         </>
     );
 }

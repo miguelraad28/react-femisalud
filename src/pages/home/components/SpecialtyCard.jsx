@@ -9,7 +9,7 @@ const SpecialtyCard = (props) => {
                 <Link to={`/especialidades${props.link}`}><h3 className='montserrat'>{props.title}<i className="bi bi-box-arrow-up-right"></i></h3></Link>
             </div>
             <div className='specialtyData'>
-                {props.description}
+                <p className='montserrat'>{props.description}</p>
             </div>
         </div>
     );
