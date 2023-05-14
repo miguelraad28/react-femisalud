@@ -5,7 +5,7 @@ const ServiceCard = (props) => {
     return (
         <div className='serviceCard'>
             <div className='serviceImage'>
-                <img src='./images/cirugias.jpg'/>
+                <img src={props.img}/>
                 <h3 className='montserrat'>{props.title}</h3>
             </div>
             <div className='serviceData'>

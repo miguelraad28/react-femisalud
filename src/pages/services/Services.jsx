@@ -17,8 +17,8 @@ const Services = () => {
         <div className='servicesPage'>
             <h1 className='montserrat'>FEMISALUD - SERVICIOS</h1>
             <div className='servicesPageContainer'>
-                <div className='serviceContent'>
-                    <div id="consultasMedicas" className='serviceContent1'>
+                <div className='servicesContent'>
+                    <div id="consultasMedicas" className='serviceContent'>
                         <h2>Consultas médicas</h2>
                         Las consultas médicas son una parte fundamental del cuidado de la salud. En nuestra clínica, ofrecemos consultas médicas en <strong>ginecología, obstetricia y endocrinología ginecológica.</strong>
                         <ul>
@@ -29,13 +29,13 @@ const Services = () => {
                             <li><strong>Endocrino ginecológicas:</strong> Si estás experimentando desequilibrios hormonales que afectan tu salud y bienestar, podemos ayudarte. Mediante consultas médicas exhaustivas, evaluamos tus síntomas, realizamos pruebas diagnósticas y creamos un plan de tratamiento personalizado para abordar trastornos hormonales específicos de las mujeres, como el síndrome de ovario poliquístico, trastornos tiroideos, trastornos del ciclo menstrual y más.</li>
                         </ul>
                     </div>
-                    <div id="ecografias" className='serviceContent2'>
+                    <div id="ecografias" className='serviceContent'>
 
                         <h2>Ecografías</h2>
                         Las ecografías son una herramienta importante en la evaluación de la salud ginecológica y obstétrica.
                         Realizamos una variedad de ecografías especializadas tanto en el ámbito ginecológico como obstétrico para brindarte información detallada sobre tu salud reproductiva y el desarrollo de tu bebé durante el embarazo. Utilizamos tecnología de vanguardia para realizar <strong>ecografías 2D, 3D y 5D Live</strong>, lo que nos permite obtener imágenes claras y precisas. Ya sea que necesites una ecografía ginecológica de diagnóstico o desees presenciar el vínculo emocional con tu bebé a través de una ecografía obstétrica, estamos aquí para ofrecerte una experiencia cómoda y segura.
                     </div>
-                    <div id="procedimientos" className='serviceContent3'>
+                    <div id="procedimientos" className='serviceContent'>
                         <h2>Procedimientos</h2>
                         En nuestra clínica, ofrecemos varios <strong>procedimientos</strong> ginecológicos para diagnosticar o tratar enfermedades y trastornos ginecológicos.
                         <ul>
@@ -45,9 +45,9 @@ const Services = () => {
                                 <strong>Biopsias Ginecológicas:</strong> En casos en los que se detecten anormalidades durante exámenes ginecológicos o pruebas de diagnóstico, se puede requerir una biopsia ginecológica. Este procedimiento nos permite obtener muestras de tejido para su análisis y determinar la presencia de enfermedades o trastornos.</li>
                         </ul>
                     </div>
-                    <div id="cirugias" className='serviceContent4'>
+                    <div id="cirugias" className='serviceContent'>
                         <h2>Cirugías</h2>
-                        En nuestra clínica, ofrecemos <strong>cirugías ginecológicas y obstétricas</strong> para tratar una amplia variedad de problemas de salud. Realizamos <strong>partos</strong> y <strong>cesáreas</strong> para garantizar un parto seguro y saludable tanto para la madre como para el bebé. También realizamos cirugías ginecológicas, como histerectomías, cirugías de quistes ováricos y cirugías para tratar la endometriosis. Estamos altamente capacitados y utilizamos tecnología avanzada para garantizar la seguridad y el bienestar de nuestros pacientes durante todo el proceso quirúrgico.
+                        En nuestra clínica, ofrecemos <strong>cirugías ginecológicas y obstétricas</strong> para tratar una amplia variedad de problemas de salud. Realizamos <strong>partos</strong> y <strong>cesáreas</strong> para garantizar un parto seguro y saludable tanto para la madre como para el bebé. También realizamos <strong>cirugías ginecológicas</strong>, como histerectomías, cirugías de quistes ováricos y cirugías para tratar la endometriosis. Estamos altamente capacitados y utilizamos tecnología avanzada para garantizar la seguridad y el bienestar de nuestros pacientes durante todo el proceso quirúrgico.
                     </div>
                 </div>
             </div>

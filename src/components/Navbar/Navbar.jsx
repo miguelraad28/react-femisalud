@@ -8,7 +8,7 @@ const Navbar = () => {
       <TopDataSection />
       <nav>
         <div className="navbarLogoContainer">
-          <img src="./images/logohd.png" />
+          <Link to="/"><img src="./images/logohd.png" /></Link>
         </div>
         <ul className='navigationContainer'>
           <NavLink to="/" className={({isActive})=> isActive ? "activeNavLink" : ""}><li className='mainLi'>INICIO<div className='background'></div></li></NavLink>
