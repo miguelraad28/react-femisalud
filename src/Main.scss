@@ -17,7 +17,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    list-style-type: none;
+    scroll-margin-top: 100px;
 }
 
 body {
@@ -29,4 +30,11 @@ body {
     body {
         padding-bottom: calc(200px + 2em);
     }
+}
+
+@media screen and (max-width: 670px) {
+    #homeSection, .specialtiesPage, .servicesPage{
+        margin-top: calc(70px + 27px);
+    }
+
 }

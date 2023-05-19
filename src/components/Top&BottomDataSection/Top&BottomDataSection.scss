@@ -99,3 +99,11 @@
         }
     }
 }
+@media screen and (max-width: 670px) {
+    .topDataSection{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+    }
+}

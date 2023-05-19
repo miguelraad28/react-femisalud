@@ -13,7 +13,6 @@ nav {
     align-items: center;
     overflow: visible;
     background-color: #ffd6ef;
-
     .navbarLogoContainer {
         translate: 0 3px;
         padding: 10px 0;
@@ -133,5 +132,17 @@ nav {
 
     to {
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    nav{
+        height: 70px;
+        justify-content: start;
+        position: fixed;
+        width: 100%;
+        margin-top: 27px;
+        z-index: 1000;
+        top: 0;
     }
 }
