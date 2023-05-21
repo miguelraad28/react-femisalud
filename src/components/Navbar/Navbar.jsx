@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import './Navbar.scss';
 import TopDataSection from '../Top&BottomDataSection/TopDataSection';
-import { Link, NavLink } from 'react-router-dom';
 import DesktopMenu from './DesktopMenu/DesktopMenu';
 import MobileMenu from './MobileMenu/MobileMenu';
 const Navbar = () => {

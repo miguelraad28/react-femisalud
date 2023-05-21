@@ -1,7 +1,8 @@
-.activeNavLink .mainLi{
+.activeNavLink .mainLi {
 
-        font-weight: 500;
-    ul li{
+    font-weight: 500;
+
+    ul li {
         font-weight: 400;
     }
 
@@ -13,6 +14,7 @@ nav {
     align-items: center;
     overflow: visible;
     background-color: #ffd6ef;
+
     .navbarLogoContainer {
         translate: 0 3px;
         padding: 10px 0;
@@ -28,7 +30,7 @@ nav {
     }
 
     .navigationContainer {
-        height: 100px;
+        height: 104px;
         position: relative;
         display: flex;
         overflow: visible;
@@ -49,58 +51,69 @@ nav {
             padding: 0 15px;
         }
 
-        .mainLi {
+        .mainLiContainer {
             position: relative;
-            overflow: visible;
 
-            .background {
-                top: 0;
-                z-index: -1;
-                translate: -15px 0;
-                background-color: #ffc6e9;
-                display: flex;
+            ::before {
+                content: "";
                 position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
                 height: 0;
+                background-color: #ffc6e9;
+                z-index: -1;
+            }
 
-                &:not(hover) {
+            .mainLi {
+                position: relative;
+                overflow: visible;
+            }
+
+            .dropdownContainer {
+                display: none;
+                position: absolute;
+                top: 100%;
+                z-index: 100;
+            }
+
+            &:hover {
+                ::before{
+                    animation: scrollDownBackground 0.3s ease both;
+                }
+                .dropdownContainer {
+                    width: max-content;
+                    translate: -15px 0;
+                    background-color: #ffbce5;
+                    color: rgb(0, 0, 0);
+                    display: block;
+                    animation: easeOpacity 0.3s ease both;
+
+                    li {
+                        font-size: 1em;
+                        padding: 10px;
+                        padding-left: 15px;
+
+                        &:hover {
+                            background-color: #ffd6ef;
+                        }
+                    }
+                }
+            }
+            &:not(hover) {
+                ::before{
                     animation: scrollUpBackground 0.3s ease both;
                 }
             }
 
-            &:hover {
-                .background {
-                    animation: scrollDownBackground 0.3s ease both;
-                }
-            }
+            
         }
 
-        .dropdownContainer {
-            display: none;
-            position: absolute;
-            top: 100%;
-            z-index: 100;
-        }
 
-        li:hover .dropdownContainer {
-            width: max-content;
-            translate: -15px 0;
-            background-color: #ffbce5;
-            color: rgb(0, 0, 0);
-            display: block;
-            animation: easeOpacity 0.3s ease both;
 
-            li {
 
-                font-size: 1em;
-                padding: 10px;
-                padding-left: 15px;
 
-                &:hover {
-                    background-color: #ffd6ef;
-                }
-            }
-        }
+
     }
 }
 
@@ -136,7 +149,7 @@ nav {
 }
 
 @media screen and (max-width: 670px) {
-    nav{
+    nav {
         height: 70px;
         justify-content: start;
         position: fixed;

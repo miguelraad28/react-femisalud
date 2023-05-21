@@ -8,14 +8,7 @@ import "./Main.scss";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer"
 function App() {
-  useEffect(() => {
-    const mobile = document.getElementById('mobile');
-    
-    setTimeout(() => {
-      mobile.style.opacity = 1;
-      
-    }, 510);
-  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />

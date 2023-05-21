@@ -6,6 +6,7 @@
     margin: auto;
     gap: 20px;
     h1 {
+        margin: 0 20px;
         text-align: center;
         padding: 22px 0 2px 0;
         font-size: calc(1.1em + 0.9vw);
@@ -22,7 +23,7 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             display: flex;
             flex-direction: column;
-            gap: 500px;
+            gap: 25px;
             font-size: 1.3em;
             h2{
                 
