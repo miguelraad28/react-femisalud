@@ -1,9 +1,12 @@
-.activeNavLink .mainLi {
-
-    font-weight: 500;
+.activeNavLink {
 
     ul li {
         font-weight: 400;
+    }
+
+    .mainLi {
+
+        font-weight: 500;
     }
 
 }
@@ -78,9 +81,10 @@ nav {
             }
 
             &:hover {
-                ::before{
+                ::before {
                     animation: scrollDownBackground 0.3s ease both;
                 }
+
                 .dropdownContainer {
                     width: max-content;
                     translate: -15px 0;
@@ -100,13 +104,14 @@ nav {
                     }
                 }
             }
+
             &:not(hover) {
-                ::before{
+                ::before {
                     animation: scrollUpBackground 0.3s ease both;
                 }
             }
 
-            
+
         }
 
 
