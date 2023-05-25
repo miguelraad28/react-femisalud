@@ -4,21 +4,17 @@ import TopDataSection from '../Top&BottomDataSection/TopDataSection';
 import DesktopMenu from './DesktopMenu/DesktopMenu';
 import MobileMenu from './MobileMenu/MobileMenu';
 const Navbar = () => {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-  });
+  const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.onresize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-      });
+      setWidth(window.innerWidth);
     };
-  }, []);
+  }, [width]);
   return (
     <>
       <TopDataSection />
       <nav>
-        {windowSize.width < 670 ? <MobileMenu /> : <DesktopMenu />}
+        {width < 670 ? <MobileMenu /> : <DesktopMenu />}
 
       </nav>
     </>
